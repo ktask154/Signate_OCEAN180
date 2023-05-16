@@ -35,12 +35,8 @@ RMSE
 75 | 0.2490 | 0.1759 | 0.1595
 
 <br />
-・変数 : 欠損率40%以下のもの
-
-・欠損率15%~40%の変数をknnで穴埋め
-
-・model : LightGBM
-
-・交差検証 : 
-
-・seed avarage
+・変数 : 欠損率40%以下のもの <br />
+・欠損率15%~40%の変数をknnで穴埋め <br />
+・model : LightGBM <br />
+・交差検証 : <br />
+・seed avarage <br />
