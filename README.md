@@ -16,6 +16,27 @@ RMSE
 <br />
 
 ## やったこと
+exp070 <br />
+・変数 : 欠損率40%以下のもの　<br />
+・欠損率15%~40%の変数をknnで穴埋め　<br />
+・model : LightGBM <br />
+&emsp; boostying : dart <br />
+&emsp; n_estimators : startが5000で1foldごと+250 <br />
+・交差検証 : TimeSplit(n=15) <br />
+・seed average <br />
+
+<br />
+exp076 <br \>
+・欠損率15%~40%の変数をknnで穴埋め <br />
+・交差検証 : <br />
+&emsp;TimeSplit(n=15) <br />
+&emsp;nested crossvalidation <br />
+&emsp;&emsp; inner cv : TimeSplit(n=3) <br />
+&emsp;&emsp; outer cv : TimeSplit(n=8) <br />
+・model : LightGBM, CatBoost　<br />
+・stacking : Linear, Ridge, SVR　<br />
+・被度文献、環境要因データ、時系列ランドサット、前年度のランドサット　<br />
+
 
 
 
